@@ -27,7 +27,7 @@ source <(kompose completion zsh)
 DEFAULT_USER=devchris
 
 ## ALIAS
-alias config="/usr/bin/git --git-dir=/Users/$HOME/.cfg/ --work-tree=$HOME"
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias c="code-insiders ."
 alias kk="clear"
 alias wip="git add . && git commit -m 'wip' && git push"
