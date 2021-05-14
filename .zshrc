@@ -27,6 +27,7 @@ source <(kompose completion zsh)
 DEFAULT_USER=devchris
 
 ## ALIAS
+alias config="/usr/bin/git --git-dir=/Users/$HOME/.cfg/ --work-tree=$HOME"
 alias c="code-insiders ."
 alias kk="clear"
 alias wip="git add . && git commit -m 'wip' && git push"
@@ -182,4 +183,4 @@ eval "$(starship init zsh)"
 export PATH="/usr/local/sbin:$PATH"
 
 export GPG_TTY=$(tty)
-gpgconf --launch gpg-agentalias config='/usr/bin/git --git-dir=/Users/devchris/.cfg/ --work-tree=/Users/devchris'
+gpgconf --launch gpg-agent
